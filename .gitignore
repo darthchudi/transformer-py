@@ -1,0 +1,9 @@
+venv
+.idea/
+__pycache__/
+*.html
+data/
+.ruff_cache
+.DS_Store
+.cog
+.github
