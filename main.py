@@ -3,7 +3,7 @@ from translator.translator import Translator
 from translator.evaluate import run_evaluation_on_translator
 
 if __name__ == "__main__":
-    print("🤠 Starting training...")
+    print("🤠 Running translator evaluation...")
 
     translator = Translator(
         model_path=WEIGHTS_PATH,
