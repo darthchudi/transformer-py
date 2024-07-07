@@ -19,8 +19,6 @@ class Attention(nn.Module):
         self.context_length = context_length
         self.dk = dk
 
-    # where x = (batch_size, context_length, embedding_dim)
-    # return a self-attention tensor (batch_size, context_length, dv)
     def forward(self, k, q, v, mask=None):
         K = self.w_k(k)
         Q = self.w_q(q)
