@@ -31,7 +31,6 @@ class Attention(nn.Module):
         dot_product = torch.matmul(Q, K.transpose(1, 2))
 
         # Scale the dot product value based on the embedding dimension of the key vector
-        # todo: fix bug here so we divide by dk
         scaled_dot_product = dot_product / torch.sqrt(torch.tensor(self.dk))
 
         # Apply the mask, so that masked positions get zeroed after softmax

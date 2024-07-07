@@ -142,7 +142,7 @@ def compute_corpus_bleu_score(predicted_sentences, target_sentences):
 
         # If the predicted sentence has no tokens adfter sanitisation then we insert the unknown token N-times (where
         # N is the context length of the target sentence) so we can compute the bleu score. The function expects to
-        # find at least 2 N-grams in the hypothesis. — TODO: confirm this
+        # find at least 2 N-grams in the hypothesis.
         if len(predicted_sentence) <= 0:
             predicted_sentence = [TOKEN_UNKNOWN] * len(target_sentence)
 
